@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Valorcine Avalanches</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="wrap">
+      <h1>Avalanches with significant impact or reach</h1>
+      <p>Scroll to explore the map.</p>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="story">
+      <div class="step" data-step="intro">
+        <h2>Overview</h2>
+        <p>Start wide: where are we in the Alps?</p>
+      </div>
+
+      <div class="step" data-step="zoom_vallorcine">
+        <h2>Zoom to Vallorcine</h2>
+        <p>Let’s focus in on the valley and surrounding terrain.</p>
+      </div>
+
+      <div class="step" data-step="show_couloirs">
+        <h2>Couloirs</h2>
+        <p>Now we can highlight the couloir polygons and their notes.</p>
+      </div>
+
+      <div class="spacer"></div>
+    </section>
+
+    <aside class="viz">
+      <div class="sticky">
+        <div id="mapMount" class="mount"></div>
+      </div>
+    </aside>
+  </main>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>

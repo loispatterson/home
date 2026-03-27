@@ -15,8 +15,11 @@ const main = runtime.module(define, (name) => {
 
 let setStepFn = null;
 let setLangFn = null;
-
-main.value(STEP_FN).then(fn => { setStepFn = fn; setStepFn?.("intro"); }).catch(() => {});
+main.value(STEP_FN).then(fn => {
+  setStepFn = fn;
+  console.log("setStep loaded", typeof fn);
+  setStepFn?.("intro");
+}).catch(err => console.error("setStep failed", err));
 main.value(LANG_FN).then(fn => { setLangFn = fn; }).catch(() => {});
 
 // hook up language select on the page

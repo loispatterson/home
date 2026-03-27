@@ -1,5 +1,5 @@
 import { Runtime, Inspector } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-import define from "https://api.observablehq.com/loispatterson/a0255c01f08851d6.js?v=3";
+import define from "https://api.observablehq.com/dvs3/a0255c01f08851d6.js?v=3";
 https://observablehq.com/d/
 
 const MAP_CELL_NAME = "map";     // the named output cell

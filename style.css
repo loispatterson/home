@@ -1,4 +1,4 @@
-:root { --max: 1100px; }
+:root { --max: 1400px; }
 
 * { box-sizing: border-box; }
 body {
@@ -25,7 +25,7 @@ body {
   max-width: var(--max);
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 0.85fr 1.65fr;
+  grid-template-columns: minmax(230px, 1fr) 3fr;
   gap: 22px;
   padding: 16px;
 }
